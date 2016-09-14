@@ -33,6 +33,23 @@
         Password is required
       </p>
 
+      <ion-item>
+        <ion-label floating primary>Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label primary>I am interested in:</ion-label> <!--should add [(ngModel)]="themes"-->
+        <ion-select multiple="true">
+          <ion-option>Design</ion-option>
+          <ion-option>Business</ion-option>
+          <ion-option>IT & Software</ion-option>
+          <ion-option>Programming</ion-option>
+          <ion-option>Marketing</ion-option>
+          <ion-option>Self Development</ion-option>
+        </ion-select>
+      </ion-item>
+
       <div padding>
         <button (click)="onSignup(signupForm)" type="submit" primary block>Create</button>
       </div>
