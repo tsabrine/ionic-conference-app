@@ -14,6 +14,7 @@ import { SignupPage } from './pages/signup/signup';
 import { AttendeesPage } from './pages/attendees/attendees';
 import { ChatPage } from './pages/chat/chat';
 import { AttendeesDetailsPage } from './pages/attendees-details/attendees-details';
+import { SurveyPage } from './pages/survey/survey';
 
 
 interface PageObj {
@@ -39,7 +40,8 @@ class ConferenceApp {
     { title: 'Speakers', component: TabsPage, index: 1, icon: 'contacts' },
     { title: 'Map', component: TabsPage, index: 2, icon: 'map' },
     { title: 'About', component: TabsPage, index: 3, icon: 'information-circle' },
-    { title: 'Attendees', component: AttendeesPage, index: 4, icon: 'contacts' },
+    { title: 'Attendees', component: AttendeesPage, index: 4, icon: 'body' },
+    { title: 'Survey', component: SurveyPage, index: 5, icon: 'book' }
   ];
   loggedInPages: PageObj[] = [
     { title: 'Account', component: AccountPage, icon: 'person' },

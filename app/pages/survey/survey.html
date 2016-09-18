@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>survey</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label primary>Select Conference:</ion-label> <!--should add [(ngModel)]="themes"-->
+    <ion-select multiple="true">
+      <ion-option>Introduction to Appcamp.io</ion-option>
+      <ion-option>Getting started with Ionic</ion-option>
+      <ion-option>Tooling for Ionic</ion-option>
+      <ion-option>Migrating to Ionic2</ion-option>
+      <ion-option>The evolution of Ioncons</ion-option>
+      <ion-option>Ionic.io Services</ion-option>
+      <ion-option>Ionic Workshop</ion-option>
+      <ion-option>Community Interaction</ion-option>
+      <ion-option>Navigation in Ionic</ion-option>
+      <ion-option>Ionic in the Entreprise</ion-option>
+      <ion-option>Ionic Worldwide</ion-option>
+      <ion-option>The Ionic Package Service</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label primary>Rate Presentation:</ion-label> <!--should add [(ngModel)]="themes"-->
+    <ion-select multiple="true">
+      <ion-option>Very Satisfying</ion-option>
+      <ion-option>Satisfying</ion-option>
+      <ion-option>Medium</ion-option>
+      <ion-option>Could be better</ion-option>
+      <ion-option>Very bad</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label primary>Rate Timing:</ion-label> <!--should add [(ngModel)]="themes"-->
+    <ion-select multiple="true">
+      <ion-option>Very Satisfying</ion-option>
+      <ion-option>Satisfying</ion-option>
+      <ion-option>Medium</ion-option>
+      <ion-option>Could be better</ion-option>
+      <ion-option>Very bad</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating primary>Tell us about your conference experience: </ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating primary>How can we make it better: </ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <button light>Submit</button>
+
+</ion-content>
