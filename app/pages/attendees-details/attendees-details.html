@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Attendee Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ng-if="attendee" class="selection">
+   <ion-card>
+        <ion-item>
+           <ion-avatar item-left image-large>
+               <img src="{{attendee.picture}}"/>
+           </ion-avatar>
+            <ion-item-content>
+                <h2>{{attendee.firstName}} {{attendee.lastName}}</h2>
+                <p>{{attendee.title}}</p>
+            </ion-item-content>
+        </ion-item>
+
+        <a *ng-if="attendee.managerId" (click)="viewManager($event, attendee.managerId)" ion-item>
+            <icon person item-left></icon>
+            <h2>View Attendee Manager</h2>
+            <p>{{attendee.managerName}}</p>
+        </a>
+        <a href="tel:{{attendee.phone}}" ion-item>
+            <icon call item-left></icon>
+            <h2>Call Office</h2>
+            <p>{{attendee.phone}}</p>
+        </a>
+        <a href="tel:{{attendee.phone}}" ion-item>
+            <icon call item-left></icon>
+            <h2>Call Mobile</h2>
+            <p>{{attendee.mobilePhone}}</p>
+        </a>
+        <a href="tel:{{attendee.phone}}" ion-item>
+            <icon text item-left></icon>
+            <h2>Text</h2>
+            <p>{{attendee.mobilePhone}}</p>
+        </a>
+        <a href="mailto:{{attendee.email}}" ion-item>
+            <icon mail item-left></icon>
+            <h2>Email</h2>
+            <p>{{attendee.email}}</p>
+        </a>
+
+    </ion-card>
+
+</div>
+</ion-content>

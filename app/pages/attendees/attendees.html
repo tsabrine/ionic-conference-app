@@ -8,5 +8,13 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ng-for="#attendee of attendees" (click)="itemTapped($event, attendee)">
+        <ion-avatar item-left>
+            <img src="{{attendee.picture}}"/>
+        </ion-avatar>
+        <h2>{{attendee.firstName}} {{attendee.lastName}}</h2>
+        <p>{{attendee.title}}</p>
+    </ion-item>
+</ion-list>
 </ion-content>
