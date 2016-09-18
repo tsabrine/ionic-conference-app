@@ -10,6 +10,9 @@ import { SignupPage } from './pages/signup/signup';
 import { TabsPage } from './pages/tabs/tabs';
 import { TutorialPage } from './pages/tutorial/tutorial';
 import { UserData } from './providers/user-data';
+import { SignupPage } from './pages/signup/signup';
+import { AttendeesPage } from './pages/attendees/attendees';
+
 
 interface PageObj {
   title: string;
@@ -34,6 +37,7 @@ class ConferenceApp {
     { title: 'Speakers', component: TabsPage, index: 1, icon: 'contacts' },
     { title: 'Map', component: TabsPage, index: 2, icon: 'map' },
     { title: 'About', component: TabsPage, index: 3, icon: 'information-circle' },
+    { title: 'Attendees', component: AttendeesPage, index: 4, icon: 'contacts' },
   ];
   loggedInPages: PageObj[] = [
     { title: 'Account', component: AccountPage, icon: 'person' },
